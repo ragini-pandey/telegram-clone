@@ -10,10 +10,10 @@
   },
   "homepage": "https://github.com/ragini-pandey/telegram-clone#readme",
   "scripts": {
-    "dev": "concurrently \"next dev\" \"npx convex dev\"",
+    "dev": "concurrently \"next dev\" \"yarn convex dev\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "yarn eslint .",
     "postinstall": "node -e \"require('lightningcss');console.log('lightningcss OK')\""
   },
   "dependencies": {
@@ -52,7 +52,6 @@
   "engines": {
     "node": ">=18.18.0"
   },
-  "packageManager": "npm@10",
   "keywords": [
     "nextjs",
     "telegram-clone",
