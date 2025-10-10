@@ -15,7 +15,9 @@ function Dashboard() {
   const { setOpen } = useSidebar();
 
   const handleCall = () => {
-    console.log('calling......');
+    if (!channel) return;
+    router.push(`/dashboard/video-call/${channel.id}`);
+    setOpen(false);
   };
 
   const handleLeaveChat = async () => {
@@ -39,7 +41,7 @@ function Dashboard() {
       {channel ? (
         <Channel>
           <Window>
-            <div className='flex flex-col justify-between'>
+            <div className='flex items-center justify-between'>
               {channel.data?.member_count === 1 ? (
                 <ChannelHeader title='Everyone else has left this chat!' />
               ) : (
