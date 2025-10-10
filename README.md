@@ -4,6 +4,25 @@ A modern Telegram-style web messenger built with **Next.js (App Router) + TypeSc
 
 ---
 
+## 🚀 Live Demo
+
+Live Demo: [https://telegram-clone-tau.vercel.app](https://telegram-clone-tau.vercel.app)
+
+---
+
+## 📸 Screenshots
+
+Here are some screenshots of the app:
+
+| View | Screenshot |
+|------|------------|
+| Chat list / contacts | ![Chat List](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot1.png) |
+| Conversation view | ![Conversation](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot2.png) |
+| User profile / settings | ![Profile](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot3.png) |
+
+---
+
+
 ## ✨ Features
 
 - 🔐 **Auth**: Email/SSO auth with **Clerk**
