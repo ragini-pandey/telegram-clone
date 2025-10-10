@@ -42,7 +42,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   const tokenProvider = useCallback(async () => {
     if (!user) throw new Error('User not found');
     return await createToken(user.id);
-  }, [user?.id]);
+  }, [user]);
 
   useEffect(() => {
     if (!streamUser) {

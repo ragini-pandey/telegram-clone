@@ -28,7 +28,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               <SidebarTrigger className='-ml-1' />
               <Separator orientation='vertical' className='mr-2 data-[orientation=vertical]:h-4' />
               <Link href='/dashboard'>
-                <h1 className='text-lg font-bold tracking-wider uppercase'>Beam</h1>
+                <h1 className='text-lg font-bold tracking-wider uppercase'>Ragini Telegram Clone</h1>
               </Link>
             </header>
             <div className='flex flex-1 flex-col gap-4 p-4 pt-0'>{children}</div>

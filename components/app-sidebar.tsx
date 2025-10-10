@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/sidebar';
 import { Button } from './ui/button';
 import { UserButton, useUser } from '@clerk/nextjs';
-import { ChannelList, divMod } from 'stream-chat-react';
+import { ChannelList } from 'stream-chat-react';
 import { ChannelFilters, ChannelSort } from 'stream-chat';
 import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/solid'
 import { NewChatDialog } from './NewChatDialog';

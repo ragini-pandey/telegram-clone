@@ -117,7 +117,7 @@ export default function Home() {
             </h2>
             <p className='text-lg text-muted-foreground mb-8 max-w-2xl mx-auto'>
               Join thousands of users who&apos;ve already discovered a better way to communicate.
-              Start your journey with Beam today — it&apos;s completely free.
+              Start your journey with Ragini Telegram Clone today — it&apos;s completely free.
             </p>
             <div className='flex flex-col sm:flex-row justify-center items-center gap-4'>
               <SignedOut>
@@ -149,7 +149,7 @@ export default function Home() {
         <div className='max-w-6xl mx-auto px-4 sm:px-6 py-12'>
           <div className='flex flex-col sm:flex-row justify-between items-center gap-6'>
             <div>
-              <span className='text-xl font-bold tracking-tight'>Beam</span>
+              <span className='text-xl font-bold tracking-tight'>Ragini Telegram Clone</span>
               <p className='text-sm text-muted-foreground mt-1'>The future of communication</p>
             </div>
             <div className='flex items-center gap-8'>
@@ -176,9 +176,10 @@ export default function Home() {
 
           <div className='border-t mt-8 pt-6 text-center'>
             <p className='text-xs text-muted-foreground'>
-              2025 Beam. This is a Demo. We have no affiliation with any of the brands mentioned in
-              the video including Beam, any usage is purely educational. In the event of any
-              infringement, please contact us and we will remove/alter the content immediately.
+              {new Date().getFullYear()} Ragini Telegram Clone. This is a Demo. We have no
+              affiliation with any of the brands mentioned in the video including Ragini Telegram
+              Clone, any usage is purely educational. In the event of any infringement, please
+              contact us and we will remove/alter the content immediately.
             </p>
           </div>
         </div>

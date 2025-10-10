@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Telegram Clone (Next.js + Convex + Clerk + Stream)
 
-## Getting Started
+A modern Telegram-style web messenger built with **Next.js (App Router) + TypeScript + Tailwind + shadcn/ui**, using **Clerk** for authentication, **Convex** for data/functions, and **Stream Chat** for real-time messaging.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- 🔐 **Auth**: Email/SSO auth with **Clerk**
+- 💬 **Real-time chat**: 1:1 and room conversations powered by **Stream Chat**
+- 🗂️ **Convex**: Serverless functions, user upsert/sync, and persistence
+- 🧩 **UI**: **shadcn/ui** components + **TailwindCSS**
+- 🟢 **Presence & typing** (via Stream channels)
+- 📎 **Attachments**: Images/files (Stream CDN)
+- 🔍 **Search**: Channel/user/message search
+- ✅ **Read receipts** / message states
+
+---
+
+## 🏗️ Tech Stack
+
+- **Frontend**: Next.js (App Router), React, TypeScript, Tailwind, shadcn/ui
+- **Auth**: Clerk
+- **Backend / Data**: Convex
+- **Realtime Messaging**: Stream Chat
+- **Tooling**: ESLint, PostCSS, Turbopack dev
+
+---
+
+## 📦 Structure
+
+```
+.
+├─ app/                 # Next.js app router
+├─ components/          # UI components
+├─ convex/              # Convex schema & serverless functions
+├─ hooks/               # React hooks
+├─ lib/                 # Stream & helper libraries
+├─ public/              # static assets
+├─ middleware.ts        # Clerk auth middleware
+├─ components.json      # shadcn/ui registry
+├─ package.json
+└─ README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- npm / pnpm
+- Clerk account & API keys
+- Stream Chat account & keys
+- Convex CLI
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔑 Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`.env.local`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-## Deploy on Vercel
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_****
+CLERK_SECRET_KEY=sk_****
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_STREAM_KEY=XXXX
+STREAM_API_SECRET_KEY=YYYY
+STREAM_APP_ID=1234567
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+CONVEX_DEPLOYMENT=dev:local
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+npx convex dev
+```
+
+Open: `http://localhost:3000`
+
+---
+
+## 🧪 Test Data
+
+- Use Clerk test users
+- Add channels/users via Stream dashboard
+
+---
+
+## 🛠️ Scripts
+
+```bash
+npm run dev     # Next.js + Convex
+npm run build   # Build
+npm start       # Start prod
+npm run lint    # Lint
+```
+
+---
+
+## 🧰 shadcn/ui
+
+```bash
+npx shadcn-ui@latest add button input
+```
+
+---
+
+## 🔒 Auth Flow
+
+- Clerk auth + middleware-protected routes
+- Server helpers: `auth()`
+
+---
+
+## 📡 Realtime (Stream)
+
+- Client: `NEXT_PUBLIC_STREAM_KEY`
+- Server: signs tokens with `STREAM_API_SECRET_KEY`
+
+---
+
+## 🧰 Convex
+
+- Run locally with `npx convex dev`
+- Define schema/functions in `/convex`
+
+---
+
+## 📦 Deploy
+
+- **Vercel** (Next.js) + **Convex Cloud**
+- Add env vars to hosting provider
