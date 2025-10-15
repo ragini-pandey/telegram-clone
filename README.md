@@ -16,9 +16,9 @@ Here are some screenshots of the app:
 
 | View | Screenshot |
 |------|------------|
-| Landing page | ![Chat List](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot1.png) |
-| Conversation view | ![Conversation](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot2.png) |
-| Video call | ![Profile](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot3.png) |
+| Landing page | ![Landing page](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot1.png) |
+| Conversation view | ![Conversation view](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot2.png) |
+| Video call | ![Video call](https://github.com/ragini-pandey/telegram-clone/blob/master/public/screenshot3.png) |
 
 ---
 
